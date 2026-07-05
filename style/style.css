@@ -1,0 +1,100 @@
+/*commun*/
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  color: #000000;
+  text-shadow:
+    0 0 4px #00e5ff,
+    0 0 8px #000000,
+    0 0 16px #ff2bd6;
+}
+/*commun*/
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  color: #000000;
+  /* text-shadow:
+    0 0 4px #000000,
+    0 0 8px #565656,
+    0 0 16px #000000; */
+}
+
+/*commun*/
+.vieux-neon {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+
+  text-shadow:
+    0 0 4px #00e5ff,
+    0 0 8px #00e5ff,
+    0 0 16px #ff2bd6;
+
+  animation: vieux-neon 20s infinite;
+}
+
+@keyframes vieux-neon {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 4px #00e5ff,
+      0 0 8px #00e5ff,
+      0 0 16px #ff2bd6;
+  }
+
+  20%, 24%, 55% {
+    opacity: 0.35;
+    text-shadow:
+      0 0 2px #00e5ff,
+      0 0 4px #00e5ff;
+  }
+
+   56% {
+    opacity: 0.1;
+    text-shadow: none;
+  }
+}
+
+/*gerer ce fuck up... GHAHGAAHHHAAAAA .. commun en attendant*/
+  img{width:50%;            } 
+
+  /* position: absolute; */
+    /* left: 6rem;
+    top: 5rem;
+    filter: drop-shadow(-6px 6px 0 rgba(255, 43, 214, 0.5))
+          drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
+          drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2)); */
+/*commun*/
+  .photo_gauche {
+    /* width: 75rem;  */
+    max-height: 500px;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    filter: drop-shadow(-6px 6px 0 rgba(255, 43, 214, 0.5))
+          drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
+          drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
+        }
+  /*commun*/
+  .photo_droite {
+    /* width: 50%; */
+    position: relative;
+    left: 47%;
+    bottom: 20%;
+    filter: drop-shadow(-6px 6px 0 rgba(255, 43, 214, 0.5))
+          drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
+          drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
+        }
+
+.nom {
+    position: absolute;
+    left: 10%;
+    bottom: -30%;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3.4rem;
+
+    color: #000000;
+}

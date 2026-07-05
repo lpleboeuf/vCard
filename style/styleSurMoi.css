@@ -1,0 +1,16 @@
+.texte p {
+      position: relative;
+
+  max-height: 18rem;
+  max-width: 25rem;
+  overflow-y: scroll;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  background-color: none;
+  position: absolute;
+  rotate: -2deg;
+  right: 14%;
+  bottom: 5%;
+  color: #000000;
+
+}

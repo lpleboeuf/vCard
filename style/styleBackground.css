@@ -1,0 +1,83 @@
+/*background*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0C0F2D;
+
+  background-image:
+    linear-gradient(
+      -2deg,
+      rgba(255, 255, 255, 1) 0 50px,
+      transparent 1px 50px
+    ),
+    linear-gradient(270deg,
+      rgba(255, 255, 255, 1) 0 10px,
+      transparent 1px 50px
+    ),
+      linear-gradient(
+      rgba(255, 255, 255, 1) 0 15px,
+      transparent 1px 50px
+    ),
+  linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0 50px,
+      transparent 1px 50px
+    ),
+      linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0 60px,
+      transparent 1px 37px
+    ),
+        linear-gradient(
+      
+      rgba(0, 0, 0, 0.5) 0 20px,
+      transparent 1px 37px
+    ),    linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.5) 0 15px,
+      transparent 1px 37px
+    ),    linear-gradient(
+      -2deg,
+      rgba(0, 0, 0, 0.5) 0 60px,
+      transparent 1px 37px
+    ),
+      repeating-linear-gradient(
+      30deg,
+      rgba(255, 43, 214, 0.50) 0 1px,
+      transparent 4px 6px
+    ),
+        repeating-linear-gradient(
+      1deg,
+     rgba(0, 229, 255, 0.35)0 1px,
+      transparent 4px 24px
+    ),
+    repeating-linear-gradient(
+      7deg,
+      rgba(240, 232, 42, 0.62) 0 1px,
+      transparent 4px 37px
+    ),
+
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 43, 214, 0.50) 0 1px,
+      transparent 1px 6px
+    ),
+        repeating-linear-gradient(
+      41deg,
+     rgba(0, 229, 255, 0.35)0 1px,
+      transparent 1px 24px
+    ),
+  
+    repeating-linear-gradient(
+      97deg,
+      rgba(240, 232, 42, 0.62) 0 1px,
+      transparent 1px 37px
+    ),
+    radial-gradient(circle at 13% 18%, rgba(255, 43, 214, 0.2) 0 920px, transparent 92px),
+    radial-gradient(circle at 85% 15%, rgba(255, 43, 214, 0.18) 0 92px, transparent 1222px),
+    linear-gradient(-135deg, rgba(240, 232, 42, 0.18) 0 12%, transparent 20% 100%),
+    linear-gradient(135deg, rgba(240, 232, 42, 0.18) 0 12%, transparent 12% 100%),
+    linear-gradient(135deg, rgba(240, 232, 42, 0.60) 0 12%, transparent 80% 100%);
+
+      
+}
