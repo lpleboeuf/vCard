@@ -1,6 +1,6 @@
 
 
-      /*nav*/
+      /*image de fond de de la barre de navigation*/
 .nav-sticker {
   width: 75%;
   margin: 40px auto;
@@ -9,7 +9,10 @@
 }
 
 /*nav*/
-/* épaisseur blanche du papier */
+/* le before crée l'element avant le nav-sticker.. il crée la couche blanche qui va sous le jaune de la barre.  je suis encore incertain mais ca
+prends absolument un content.. le translate le deplace pour le decaler de l'autre forme.  
+le inset fait prendre toute la place dans le parent.. ce n'est pas 100% controlé mais je vais y arriver
+le z-index 0 le place entre le 1 et le -1 pour empiler les couches comme il faut */
 .nav-sticker::before {
   content: "";
   position: absolute;
@@ -30,8 +33,8 @@
     0% 70%);
 }
 
-/*nav*/
-/* ombre générale */
+
+/* Crée l'ombre sous le nav-sticker, le place sous tout le monde avec le z-index : -1  */
 .nav-sticker::after {
   content: "";
   position: absolute;
@@ -53,7 +56,8 @@
     
 }
 
-/*nav*/
+/*finalement la couche jaune de la barre de navigation
+le clip-path c'est de jouer a relie les points en partant du coin haut-gauche*/
 nav {
   position: relative;
   z-index: 1;
@@ -79,7 +83,10 @@ nav {
 
   
 }
-/*nav*/
+
+
+/*fait lka grid pour placer mes boutons menu*/
+
 .menu-grid {
   width: 380px;
   margin-right: 13px;
@@ -91,7 +98,7 @@ nav {
   gap: 8px 10px;
   text-align: right;
 }
-/*nav*/
+/*les boutons menu*/
 .menu-grid a {
   text-align: center;
   color: #111;
@@ -106,5 +113,5 @@ nav {
 
 
 }
- /*nav*/
+
 

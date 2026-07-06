@@ -1,5 +1,7 @@
+/*regle la grosseur et la position de l'image*/
+
 .photo_droite img {
     display: block;
-    width: 75%;
+    width: 140%;
     translate: -25%;
 }

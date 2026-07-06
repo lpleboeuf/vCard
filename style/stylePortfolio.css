@@ -1,4 +1,6 @@
-/*portfolio*/
+/*
+bloc pour contenir les cv,blog et portfolio
+*/
 .portfolio {
   max-height: 500px;
   width: 500px;
@@ -17,7 +19,9 @@
           drop-shadow(12px 12px 0 #00e5ff80)
           drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
 }
-
+/*
+affichage des projets
+*/
 .projet {
 
   display: grid;
@@ -36,7 +40,9 @@
           drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
 }
 
-
+/*
+image relié au projet
+*/
 .projet img {
   width: 200px;
   max-height: 200px;

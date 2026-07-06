@@ -5,6 +5,7 @@ body {
   background-color: #0C0F2D;
 
   background-image:
+  /*contour style BD*/
     linear-gradient(
       -2deg,
       rgba(255, 255, 255, 1) 0 50px,
@@ -41,6 +42,7 @@ body {
       rgba(0, 0, 0, 0.5) 0 60px,
       transparent 1px 37px
     ),
+    /*lignes du fond*/
       repeating-linear-gradient(
       30deg,
       rgba(255, 43, 214, 0.50) 0 1px,
@@ -73,6 +75,8 @@ body {
       rgba(240, 232, 42, 0.62) 0 1px,
       transparent 1px 37px
     ),
+
+    /*bunch de formes et gradient pour finaliser le look*/
     radial-gradient(circle at 13% 18%, rgba(255, 43, 214, 0.2) 0 920px, transparent 92px),
     radial-gradient(circle at 85% 15%, rgba(255, 43, 214, 0.18) 0 92px, transparent 1222px),
     linear-gradient(-135deg, rgba(240, 232, 42, 0.18) 0 12%, transparent 20% 100%),

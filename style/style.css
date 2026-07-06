@@ -1,3 +1,9 @@
+
+/*
+-- à améliorer --
+j'ai essayé d'appliquer les h1-h2... mais j'ai oublié en cour de route donc c'est disparate....
+*/
+
 h1 {
   font-family: 'Caveat', cursive;
   font-size: 3rem;
@@ -12,10 +18,7 @@ h2 {
   font-family: 'Caveat', cursive;
   font-size: 2rem;
   color: #000000;
-  /* text-shadow:
-    0 0 4px #000000,
-    0 0 8px #565656,
-    0 0 16px #000000; */
+
 }
 
 
@@ -68,22 +71,27 @@ ici, les pourcentages servent à definir quand nous sommes dans le temps (ici 20
 
 
 /*
+
+---- cette note m'a suivi plusieurs jours ---
 gerer ce fuck up... GHAHGAAHHHAAAAA .. 
 
 j'ai raté ici car je testais des trucs au début et j'ai clairement oublié ce magnifique artéfact
 le site est monté autour de cette loi niaiseuse et je vais voir à régler ça.  Juste que si je ne
 me rend pas à corriger ceci.. au moins vous ave une idée de pourquoi c'est là
+
+-- finalement -- 
+j'ai pu simplement tout regler en changeant le width de 50% a 100% et en reglant les width des photo gauche et photo droite
 */
-  img{width:50%;            } 
+
+
+
+  img{width:100%;            } 
 
 /*
 section de gauche de la page.  gère la photo de profil.  
-l'ajout de display: flex a fait que ma photo semble reculler derriere l'image de droite si on rétréci la page manuellement
-l'effet est une belle surprise!
-
 */
   .photo_gauche {
-     width: 75%;  
+     width: 42%;  
     max-height: 500px;
     position: absolute;
     display: block;
@@ -93,9 +101,12 @@ l'effet est une belle surprise!
           drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
           drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
         }
-  /*commun*/
+ 
+/*
+section de droite de la page.  
+*/
   .photo_droite {
-    width:  min(1600px); 
+    width:  50%; 
     position: relative;
     /* display:block; */
     padding-left: 30px;
@@ -106,7 +117,9 @@ l'effet est une belle surprise!
           drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
         }
 
-  /* .photo_droite img{display:block;} */
+/*
+pour le nom dans la barre de nav... je suis incertain pourquoi ca ne fonctionne pas quand il est dans stylenav
+*/
 
 .nom {
     position: absolute;

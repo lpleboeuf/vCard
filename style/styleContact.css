@@ -1,12 +1,18 @@
 
+ 
+  /* text écris dans la main */
+  
+
   .Contact {
     position: absolute;
     rotate: -28deg;
-    left: 12%;
+    left: 17%;
     top: 42%;
     color: #000000;
   
   }
+/* 
+place mon texte et l'espace */
 
   .Contact ol li {
     list-style: none;
@@ -14,6 +20,9 @@
     margin-bottom: 15px; /* Élargit l'espace vertical entre les numéros */
     padding: 3%;
 }
+/* 
+gere mon texte de ma liste vue que ce sont des a et non juste des li */
+
   .Contact ol li a{
     font-size: 2rem;
     font-family:Caveat, cursive;
@@ -22,8 +31,11 @@
       0 0 4px #000000,
       0 0 8px #565656,
       0 0 16px #000000;
-  margin-bottom: 15px; /* Élargit l'espace vertical entre les numéros */
+  margin-bottom: 15px; 
 }
+
+/* 
+effet quand on hover avec la souris */
 
   .Contact ol li a:hover{
     list-style: none;
@@ -36,6 +48,8 @@
       0 0 16px #ffffff;
   margin-bottom: 15px; /* Élargit l'espace vertical entre les numéros */
 }
+
+/*bloc message qui ressemble a un post it*/
 
 .message {
   font-family: 'Caveat', cursive;
@@ -50,11 +64,15 @@
           drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
           drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
 }
+
 .message label {
   display: flex;
   margin: 8px;
   font-weight: bold;
 }
+
+/* 
+boite pour mettre le texte */
 
 .message textarea {
   width: 100%;
@@ -67,6 +85,8 @@
    
 }
 
+
+/*boutons*/
 .message button[type="submit"] {
   background-color: #ff2bd6;
   color: #fff;
