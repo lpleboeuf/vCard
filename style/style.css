@@ -1,4 +1,3 @@
-/*commun*/
 h1 {
   font-family: 'Caveat', cursive;
   font-size: 3rem;
@@ -8,7 +7,7 @@ h1 {
     0 0 8px #000000,
     0 0 16px #ff2bd6;
 }
-/*commun*/
+
 h2 {
   font-family: 'Caveat', cursive;
   font-size: 2rem;
@@ -19,8 +18,15 @@ h2 {
     0 0 16px #000000; */
 }
 
-/*commun*/
-.vieux-neon {
+
+
+/* 
+Animation qui fait flasher ce à quoi je l'applique
+le texte est mis en bold et trois shadow lui sont appliqué 
+c'est avec ces shadow qu'on va venir créer l'animation a laide de.. animation
+c'est nouveau donc: animation: nom de ce que je vise   durée de l'animation   nombre de boucle
+*/
+.vieux-neon { 
   color: #111;
   text-decoration: none;
   font-weight: bold;
@@ -33,7 +39,9 @@ h2 {
 
   animation: vieux-neon 20s infinite;
 }
-
+/*
+ici, les pourcentages servent à definir quand nous sommes dans le temps (ici 20s)
+*/
 @keyframes vieux-neon {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     opacity: 1;
@@ -56,36 +64,49 @@ h2 {
   }
 }
 
-/*gerer ce fuck up... GHAHGAAHHHAAAAA .. commun en attendant*/
+
+
+
+/*
+gerer ce fuck up... GHAHGAAHHHAAAAA .. 
+
+j'ai raté ici car je testais des trucs au début et j'ai clairement oublié ce magnifique artéfact
+le site est monté autour de cette loi niaiseuse et je vais voir à régler ça.  Juste que si je ne
+me rend pas à corriger ceci.. au moins vous ave une idée de pourquoi c'est là
+*/
   img{width:50%;            } 
 
-  /* position: absolute; */
-    /* left: 6rem;
-    top: 5rem;
-    filter: drop-shadow(-6px 6px 0 rgba(255, 43, 214, 0.5))
-          drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
-          drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2)); */
-/*commun*/
+/*
+section de gauche de la page.  gère la photo de profil.  
+l'ajout de display: flex a fait que ma photo semble reculler derriere l'image de droite si on rétréci la page manuellement
+l'effet est une belle surprise!
+
+*/
   .photo_gauche {
-    /* width: 75rem;  */
+     width: 75%;  
     max-height: 500px;
     position: absolute;
+    display: block;
     left: 10%;
-    bottom: 10%;
+    top: 17%;
     filter: drop-shadow(-6px 6px 0 rgba(255, 43, 214, 0.5))
           drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
           drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
         }
   /*commun*/
   .photo_droite {
-    /* width: 50%; */
+    width:  min(1600px); 
     position: relative;
+    /* display:block; */
+    padding-left: 30px;
     left: 47%;
-    bottom: 20%;
+    top: 17%;
     filter: drop-shadow(-6px 6px 0 rgba(255, 43, 214, 0.5))
           drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
           drop-shadow(2px -8px 0 rgba(0, 0, 0, 0.2));
         }
+
+  /* .photo_droite img{display:block;} */
 
 .nom {
     position: absolute;

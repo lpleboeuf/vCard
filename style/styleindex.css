@@ -1,0 +1,5 @@
+.photo_droite img {
+    display: block;
+    width: 75%;
+    translate: -25%;
+}

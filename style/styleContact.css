@@ -1,9 +1,9 @@
-/*contact*/
+
   .Contact {
     position: absolute;
     rotate: -28deg;
-    right: 22%;
-    top: 53%;
+    left: 12%;
+    top: 42%;
     color: #000000;
   
   }
@@ -12,6 +12,7 @@
     list-style: none;
     text-align: center;
     margin-bottom: 15px; /* Élargit l'espace vertical entre les numéros */
+    padding: 3%;
 }
   .Contact ol li a{
     font-size: 2rem;
@@ -93,3 +94,4 @@
         filter: drop-shadow(-6px 6px 0 #ff2bd680)
           drop-shadow(12px 12px 0 rgba(0, 229, 255, 0.5))
 }
+
